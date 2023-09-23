@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(t):
+    a,b,c =  map(int,input().split())
+    p = a+b 
+    if p<c:
+        print('PLANEBUS')
+    elif p>c:
+        print('TRAIN')
+    else:
+        print('EQUAL')
