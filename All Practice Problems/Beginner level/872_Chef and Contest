@@ -1,0 +1,11 @@
+t = int(input())
+for i in range(t):
+    cm , fm, cw, fw = map(int,input().split())
+    c = cm + (10*cw)
+    f = fm + (10*fw)
+    if c<f:
+        print('Chef')
+    elif c==f:
+        print('Draw')
+    else:
+        print('Chefina')
