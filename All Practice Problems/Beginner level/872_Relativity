@@ -1,0 +1,6 @@
+t = int(input())
+for i in range(t):
+    g , c = map(int,input().split())
+    n = c*c 
+    d = 2*g 
+    print(int(n/d))
