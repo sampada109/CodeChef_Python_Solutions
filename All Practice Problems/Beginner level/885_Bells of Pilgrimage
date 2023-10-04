@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(t):
+    a,b,x,c = map(int,input().split())
+    if x<=b:
+        r = c + (x*10)
+    elif x>b and x<a:
+        r = c + (b*10) + ((x-b)*5)
+    else:
+        r = c + (b*10) + ((x-b)*5) + 20
+    print(r)    
