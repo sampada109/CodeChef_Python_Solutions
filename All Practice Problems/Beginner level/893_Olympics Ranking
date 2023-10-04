@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    c1,c2,c3,d1,d2,d3 = map(int,input().split())
+    if (c1+c2+c3) > (d1+d2+d3):
+        print(1)
+    else:
+        print(2)
