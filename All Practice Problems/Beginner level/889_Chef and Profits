@@ -1,0 +1,6 @@
+t = int(input())
+for i in range(t):
+    n , y , z = map(int,input().split())
+    b = n*y  
+    s = n*z 
+    print(s-b)
