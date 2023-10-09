@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    alist = list(map(int,input().split()))
+    blist = list(map(int,input().split()))
+    count = 0 
+    for i in range(n):
+        if alist[i]<=2*blist[i] and 2*alist[i]>=blist[i]:
+            count +=1 
+    print(count)    
