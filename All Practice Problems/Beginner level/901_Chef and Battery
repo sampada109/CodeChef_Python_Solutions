@@ -1,0 +1,12 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    m = 0
+    while(n !=50):
+        if n>50:
+            n -=3
+            m +=1 
+        else:
+            n +=2
+            m +=1
+    print(m)      
