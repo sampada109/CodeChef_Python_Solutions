@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(t):
+    n,c = map(int,input().split())
+    if c<=0:
+        r = n 
+    elif n==c:
+        r = (c*2) + (n-c) - 1
+    else:
+        r = (c*2) + (n-c)
+    print(r)
