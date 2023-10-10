@@ -1,0 +1,10 @@
+t = int(input())
+for i in range(t):
+    x,y,z,p,a,b,c = map(int,input().split())
+    if a>=x and b>=y and c>=z:
+        if (a+b+c)>=p:
+            print('YES')
+        else:
+            print('NO')
+    else:
+        print('NO')
