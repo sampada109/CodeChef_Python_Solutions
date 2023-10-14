@@ -1,0 +1,6 @@
+t = int(input())
+for i in range(t):
+    s = int(input())
+    x = s+1               #as x>0, so x will also be greater than sum
+    y = s-x
+    print(x*y)
