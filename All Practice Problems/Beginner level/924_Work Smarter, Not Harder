@@ -1,0 +1,13 @@
+import math
+
+t = int(input())
+for i in range(t):
+    l,v1,v2 = map(int,input().split())
+    r1 = math.ceil(l/v1)
+    r2 = math.ceil(l/v2)
+    if r1==r2:
+        print(-1)
+    elif(r1-1==r2):
+        print(0)
+    else:
+        print(r1-r2-1)
