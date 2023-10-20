@@ -1,0 +1,11 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    s = input()
+    if s.count('C')==s.count('N'):
+        print(55*n)
+    elif s.count('C')>s.count('N'):
+        print(60*n)
+    else:
+        print(40*n)
+        
