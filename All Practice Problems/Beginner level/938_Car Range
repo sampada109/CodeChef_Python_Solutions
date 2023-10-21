@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    p,m,v = map(int,input().split())
+    if p>1:
+        print((m-(p-1))*v)
+    else:
+        print(m*v)
