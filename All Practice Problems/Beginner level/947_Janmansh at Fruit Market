@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    x,a,b,c = map(int,input().split())
+    r = (x-1)*min(a,b,c)
+    r = r + ( (a+b+c) - min(a,b,c) - max(a,b,c))
+    print(r)
+    
