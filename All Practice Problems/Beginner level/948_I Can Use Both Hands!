@@ -1,0 +1,7 @@
+import math 
+
+t = int(input())
+for i in range(t):
+    l,r,m = map(int,input().split())
+    rslt = math.ceil(m/l) + (m//r)
+    print(rslt)
