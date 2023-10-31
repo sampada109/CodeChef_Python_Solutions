@@ -1,0 +1,12 @@
+t = int(input())
+for i in range(t):
+    d,m,a,b,c = map(int,input().split())
+    ds = d*m
+    if ds>=10 and ds<21 and ds<42:
+        print(a)
+    elif ds>=21 and ds<42:
+        print(b)
+    elif ds>=42:
+        print(c)
+    else:
+        print(0)
