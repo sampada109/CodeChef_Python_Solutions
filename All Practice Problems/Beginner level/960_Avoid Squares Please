@@ -1,0 +1,17 @@
+import math
+
+def prfsr(n):
+    for i in range(n):
+        num = i * (i+1)
+        srt = int(math.sqrt(num))
+        if srt*srt != num:
+            l.append(i)
+            l.append(i+1)
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+    l = []
+    prfsr(n)
+            
+    print(*set(l))
