@@ -1,0 +1,5 @@
+d,r,v = map(int,input().split())
+if max(d,r,v)==d:
+    print('Yes')
+else:
+    print('No')
