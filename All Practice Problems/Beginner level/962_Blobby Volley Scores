@@ -1,0 +1,15 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    l = input()
+    s , a, b = 0, 0 ,0
+    for i in range(n):
+        if s==0 and l[i]=='A':
+            a +=1 
+        elif s==0 and l[i]=='B':
+            s = 1 
+        elif s==1 and l[i]=='B':
+            b +=1 
+        else:
+            s = 0
+    print(a,b)   
