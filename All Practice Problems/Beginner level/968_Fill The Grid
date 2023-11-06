@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    r,c = map(int,input().split())
+    total = r*c
+    cover = (r//2)*(c//2)
+    left = abs(total - (cover*4))
+    print(left)
