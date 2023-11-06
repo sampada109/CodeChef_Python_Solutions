@@ -1,0 +1,14 @@
+t = int(input())
+for i in range(t):
+    a = list(map(int,input().split()))
+    b = list(map(int,input().split()))
+    ca, cb = 0,0
+    for i in range(len(a)):
+        if a[i]>b[i]:
+            ca +=1 
+        else:
+            cb +=1 
+    if ca>cb:
+        print('A')
+    else:
+        print('B')
