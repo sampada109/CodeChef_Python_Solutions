@@ -1,0 +1,9 @@
+t = int(input())
+for i in range(t):
+    a,m,d = map(int,input().split())
+    at = a*m 
+    tt = d*24*60
+    if at<=tt:
+        print('YES')
+    else:
+        print('NO')
