@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    n,a,b = map(int,input().split())
+    l = list(map(int,input().split()))
+    f = l.count(a)/n 
+    s = l.count(b)/n 
+    print(f*s)
