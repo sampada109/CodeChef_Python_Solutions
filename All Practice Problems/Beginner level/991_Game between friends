@@ -1,0 +1,18 @@
+t = int(input())
+for i in range(t):
+    nitin, sobh , ritik , satya = map(int,input().split())
+    
+    if sobh>nitin:                      #first time ritik gave coins
+        nitin = nitin + ritik
+    else:
+        sobh = sobh + ritik
+    
+    if sobh>nitin:                      # second time satya gave coins
+        nitin = nitin + satya
+    else:
+        sobh = sobh + satya
+        
+    if sobh>nitin:                       #final who has more coins
+        print('S')
+    else:
+        print('N')
