@@ -1,0 +1,13 @@
+t = int(input())
+for i in range(t):
+    s,n = map(int,input().split())
+    if n==0:
+        if s%4==0:
+            print('Off')
+        else:
+            print('On')
+    else:
+        if s%4 !=0:
+            print('Ambiguous')
+        else:
+            print('On')
