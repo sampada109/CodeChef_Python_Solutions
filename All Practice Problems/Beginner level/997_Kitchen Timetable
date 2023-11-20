@@ -1,0 +1,16 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    ft = list(map(int,input().split()))
+    rt = list(map(int,input().split()))
+    
+    count = 0
+    st = ft[0]
+    
+    for i in range(n):
+        if i>0:
+            st = ft[i] - ft[i-1]
+        if st >= rt[i]:
+            count +=1 
+            
+    print(count)       
